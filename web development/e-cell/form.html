@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Lobster&family=Sofia+Sans+Condensed:wght@1&family=Teko:wght@300&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form.css" />
+
+  </head>
+  <body>
+    <form action="myaction.php" onsubmit="get_detail()" name="my_form" method="post">
+      <div class="form-box">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Jatin Chandel" required />
+<hr>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="jatin@hotmail.com" required/>
+<hr>
+
+        <label for="num">Company Name</label>
+        <input type="tel" name="cname" id="cname" placeholder="TATA BIRLA" required/>
+<hr>
+        <label for="num">Mobile Number</label>
+        <input type="tel" name="mnum" id="mnum" placeholder="9874******" required pattern="[6-9]{1}[0-9]{9}"/>
+<hr>
+        <label for="city">City</label>
+        <input type="text" name="cityname" id="cityname"  placeholder="BHOPAL" required/>
+
+        <input type="submit" id="submit" />
+      </div>
+    </form>
+  </body>
+
+</html>
